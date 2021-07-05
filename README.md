@@ -25,6 +25,8 @@ available on a file descriptor one line at a time until the EOF.
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 - `gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line_bonus.c get_next_line_utils_bonus.c main.c -o gnl && ./gnl`
+
 Compiling GNL with a minimalist main with the above command will start reading from the standard input of the current terminal, each `enter` will return from the get_next_line function with the return value displayed between `[]`
 To end this, `EOF` can be enter with `ctrl + D`
+
 Alternatively, stdin can be filled using pipes: `echo hello '\n' bye | ./gnl`
